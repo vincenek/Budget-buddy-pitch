@@ -89,7 +89,7 @@
 
         .metric-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr));
             gap: 40px;
             margin-top: 40px;
         }
@@ -138,6 +138,30 @@
 
         button:hover {
             opacity: 0.9;
+        }
+
+        /* Developer Footer */
+        .dev-footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            margin-top: 60px;
+            color: #636E72;
+        }
+
+        .dev-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .dev-links a {
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
     </style>
 </head>
@@ -207,20 +231,24 @@
             </div>
         </section>
 
-        <!-- Team -->
-        <section class="team">
-            <h2>Backed by Financial Experts</h2>
-            <!-- Add team photos/bios -->
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2>For Investment Inquiries</h2>
-            <form>
-                <input type="email" placeholder="Your institutional email">
-                <button>Request Full Pitch</button>
-            </form>
-        </section>
+        <!-- Developer Footer -->
+        <footer class="dev-footer">
+            <p>Developed by Kenechukwu Vincent</p>
+            <div class="dev-links">
+                <a href="https://github.com/vincenek" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://vincenek.github.io/Budget-buddy-/" target="_blank">
+                    <i class="fas fa-rocket"></i>
+                    Live Prototype
+                </a>
+                <a href="mailto:kenechukwu130@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+            </div>
+        </footer>
     </div>
 
     <script>
